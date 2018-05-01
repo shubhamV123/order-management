@@ -76,8 +76,8 @@ handleLoginClick(event, data)
 
           })
           .catch((err) => {
-              errors.push("there is somethinig error here");
-              this.setState({loading: false,error:[]});
+              errors.push("Please check email id or password");
+              this.setState({loading: false,errors:errors});
 
           })
    
@@ -106,7 +106,7 @@ render(){
                             list={this.state.errors}
                         />
                             <h1>Login</h1>
-                            <Input onChange={this.handleEmailChange.bind(this)} focus placeholder="Email" type="tel" icon="email" /> <br /><br />
+                            <Input onChange={this.handleEmailChange.bind(this)} focus placeholder="Email" type="tel" icon="at" /> <br /><br />
                             <Input onChange={this.handlePasswordChange.bind(this)} required focus placeholder="Password" type="password" icon="lock" /><br /><br />
                             <Button
                                 content="Sign Up"

@@ -130,7 +130,7 @@ render(){
                         <center>
                             <h1>Register</h1>
                             <Input id="name" value={this.state.name} onChange={this.handleDetailsChange.bind(this)} placeholder="Owner Name" focus icon="user circle" /><br/><br/>
-                            <Input id="email" value={this.state.email} onChange={this.handleDetailsChange.bind(this)}  focus placeholder="Email" type="tel" icon="email" /> <br/><br/>
+                            <Input id="email" value={this.state.email} onChange={this.handleDetailsChange.bind(this)}  focus placeholder="Email" type="tel" icon="at" /> <br/><br/>
                             <Input id="password" value={this.state.password} onChange={this.handleDetailsChange.bind(this)} required focus placeholder="Password" type="password" icon="lock" /><br/><br/>
 
                             <Button
